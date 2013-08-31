@@ -43,7 +43,6 @@ def find_words(string, words):
                     word_ranges.add((offset + pos+1-curlen, offset + pos+1))
                 curlen += 1
 
-    print word_ranges
     valid_words = []
     for word_range in word_ranges:
         valid_words.append(string[slice(*word_range)])
